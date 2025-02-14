@@ -1,0 +1,39 @@
+{
+  "name": "electron-exit",
+  "version": "0.0.1",
+  "description": "Actually exit Electron apps",
+  "main": "index.js",
+  "author": "Jimb Esser (https://github.com/Jimbly)",
+  "license": "MIT",
+  "keywords": [
+    "win32",
+    "console",
+    "palette",
+    "color"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Jimbly/electron-exit.git"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-abi": "^3.74.0",
+    "node-addon-api": "^3.0.0",
+    "prebuild-install": "^7.0.0"
+  },
+  "binary": {
+    "napi_versions": [
+      3
+    ]
+  },
+  "scripts": {
+    "publish_build": "prebuild -t 3 -r napi",
+    "publish_build_electron": "prebuild -t 29.4.6 -r electron",
+    "install": "prebuild-install --verbose --runtime napi || node-gyp rebuild",
+    "test": "node-gyp build && node ./test.js"
+  },
+  "gypfile": true,
+  "devDependencies": {
+    "prebuild": "^13.0.1"
+  }
+}
