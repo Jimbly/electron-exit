@@ -1,0 +1,9 @@
+node_modules/
+build/
+prebuilds/
+npm-debug.log
+*.sublime-workspace
+.DS_Store
+palette_import.js
+test.js
+.editorconfig

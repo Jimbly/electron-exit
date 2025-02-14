@@ -1,0 +1,5 @@
+py2shell
+nvs_shell
+nvs -> Node 18
+npx node-gyp configure
+npx node-gyp build
