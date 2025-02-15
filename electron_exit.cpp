@@ -57,6 +57,7 @@ Value exitFunc(const CallbackInfo &info) {
     actuallyExit(id, timeout);
   } else {
     std::thread t1(actuallyExit, id, timeout);
+    t1.detach();
   }
 
   return env.Null();

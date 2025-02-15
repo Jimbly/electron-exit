@@ -1,6 +1,6 @@
 {
   "name": "electron-exit",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Actually exit Electron apps",
   "main": "index.js",
   "author": "Jimb Esser (https://github.com/Jimbly)",
